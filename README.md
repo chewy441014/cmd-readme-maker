@@ -1,8 +1,12 @@
-# bsree 
-  <img src=https://img.shields.io/badge/license-GNU-blue>
+# CMD README MAKER
+  <img src=https://img.shields.io/badge/license-MIT-blue>
    
   ## Description  
-  re5h4e5 
+  <a name="desc"></a>
+  This command line tool allows you to create a complete readme from the command line. The app will prompt you for input about your project and once the details are compiled, the readme will be created in the 
+  > readme-demo 
+
+  folder.  
    
   ## Table of Contents 
   - [Description](#desc)
@@ -20,35 +24,38 @@
   - [Questions](#ques) 
 
    
-  <a name="instr"></a> 
   ## Installation Instructions 
-   
-  >aergareg 
+  <a name="instr"></a> 
+To install this program, clone the git repo
+>git clone "git@github.com:chewy441014/cmd-readme-maker.git"
+
+Then open a bash terminal in the repo and type 
+>npm i
+
+This will install the dependencies of the project. Finally, type 
+>node index.js 
+
+To run the app. 
    
   ## Usage information 
   <a name="usage"></a>  
    
-  qwrfq 
-   
-  ## Contribution Guidelines 
-  <a name="contr"></a>  
-   
-  awgw 
+To use this app, follow the installation instructions and make sure to provide detailed answers to each question. A license is required. 
    
   ## Test Instructions 
   <a name="test"></a>  
    
-  awe4g 
+  There are no tests for this application. 
    
   ## License 
   <a name="lic"></a>  
   This software is licensed under the: 
 
-  GNU General Public License v3.0 
+  MIT License 
    
   ## Questions 
   <a name="ques"></a>  
    
-  [Github](#https://www.github.com/trhr5h) 
+  [Github](#https://www.github.com/chewy441014) 
 
-  For further questions, contact me at: drthrt 
+  For further questions, contact me at: preston.leon.hill@gmail.com

@@ -1,46 +1,26 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// get the license badge based on user input
 function renderLicenseBadge(license) {
   //<img src=https://img.shields.io/badge/license-MIT-blue>
   switch (license[0]) {
     case "M":
-      // code block
       return "<img src=https://img.shields.io/badge/license-MIT-blue>"
     case "I":
-      // code block
-      return "<img src=https://img.shields.io/badge/license-ISC-blue>"
+      return "<img src=https://img.shields.io/badge/license-ISC-green>"
     case "G":
-      // code block
-      return "<img src=https://img.shields.io/badge/license-GNU-blue>"
+      return "<img src=https://img.shields.io/badge/license-GNU-red>"
     default:
-    // code block
-    console.log('something went wrong, license badge broke')
+    console.log('Something went wrong, license badge broke')
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-
-}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  console.log("Generate Markdown Function");
-  answers = data;
-  var icon = renderLicenseBadge(answers.lic);
-  // console.log(questions.length)
-  // console.log(answers)
+// function to generate markdown for README
+function generateMarkdown(answers) {
+  let icon = renderLicenseBadge(answers.lic);
   return `# ${answers.title} 
   ${icon}
    
   ## Description  
+  <a name="desc"></a>
   ${answers.desc} 
    
   ## Table of Contents 
@@ -52,8 +32,8 @@ function generateMarkdown(data) {
   - [License](#lic) \n
   - [Questions](#ques) \n
    
-  <a name="instr"></a> 
   ## Installation Instructions 
+  <a name="instr"></a> 
    
   >${answers.instr} 
    
@@ -82,7 +62,7 @@ function generateMarkdown(data) {
    
   [Github](#https://www.github.com/${answers.github}) \n
   For further questions, contact me at: ${answers.email} 
-`;
-}
+`;}
 
+// make the generateMarkdown function available to other scripts.
 module.exports = generateMarkdown;
